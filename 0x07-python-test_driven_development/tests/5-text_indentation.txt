@@ -1,0 +1,26 @@
+The ``text_indentation`` module
+===============================
+
+Using ``text_indentation``
+==========================
+
+A function that prints a text with 2 new lines after each of these characters: ., ? and :
+
+::
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+    >>> text = "My name is Oluwakemi. I love God? Tell me if you can: love God."
+    >>> text_indentation(text)
+    My name is Oluwakemi.
+    <blankline>
+    I love God?
+    <blankline>
+
+    >>> text = 76
+    >>> text_indentation(text)
+    Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+    File "<stdin>", line 6, in print_square
+    TypeError: text must be a string
+
+    >>> text = "76"
+    76
