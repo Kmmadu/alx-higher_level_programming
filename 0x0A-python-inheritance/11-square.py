@@ -1,7 +1,13 @@
 #!/usr/bin/python3
-Square = __import__('11-square').Square
+"""Defines Rectangle module."""
+Rectangle = __import__('9-rectangle').Rectangle
 
-s = Square(13)
 
-print(s)
-print(s.area())
+class Square(Rectangle):
+    """class body."""
+
+    def __init__(self, size):
+
+        self.integer_validator("size", size)
+        super().__init__(size, size)
+        self.__size = size
